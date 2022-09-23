@@ -1,0 +1,268 @@
+*{
+	padding: 0; margin: 0; font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	background-color: #ffe;
+}
+
+/*¨Header ¨*/
+
+header {
+    background: darkseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0px 7px 0px;
+}
+
+header img {
+    width: 100px;
+} 	
+
+.menu li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+.menu li a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.menu {
+	display: flex;
+	width: 50%;
+	
+}
+
+.menu a:hover{
+	background-color: skyblue;
+	border-radius: 20px;
+}
+/*header*/
+/*Inicio*/
+.producto, .descripcion{
+    width: 95%;
+    display: flex;
+    gap: 13px;
+    margin-bottom: 40px;
+    background-color: skyblue;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+#perfil{
+	width: 100%;
+}
+form {
+    margin-top: 20px;
+}
+.text{
+	display:inline-block;
+	padding: 20px;
+}
+
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+
+
+}
+.art {
+	width: 95%;
+    height: 275px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-bottom: 15px;
+    background-color: skyblue;
+    border-radius: 16px;
+    text-align: center;
+}
+.art div {
+    height: 100%;
+    width: 400px;
+    background: white;
+}
+img.articule {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.art ul {
+    align-self: center;
+    flex-grow: 3;
+}
+
+div#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0px 5% 0%;
+}
+
+
+.containerProducto {
+    background: white;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 285px;
+}
+.containerProducto div {
+    width: 200px;
+    height: 200px;
+}
+
+.containerProducto div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+h1,h2,h3{
+	text-align: center;
+	color: black;
+}
+p{
+	color: black;
+	font-size: 14px;
+	text-align: center;
+}
+
+
+/*El login,registro,encuesta sus respectivas clases*/
+input[type="text"], input[type="password"],input[type="email"]  {
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    border: 0.3px solid gray;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    height: 40px;
+    width: 90%;
+    background: #dafff6;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+}
+
+.Login, .Registrarse,.Encuesta{
+	padding-top: 110px;
+    padding-bottom: 160px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-align:center;
+    margin-bottom: 25px;
+}
+.forms,.log{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	flex-direction: column;
+}
+/*El login,registro,encuesta sus respectivos id*/
+#formulario,#registro,#EncuestaUsuario{
+	 background-color: skyblue;
+    color: black;
+    width: 30%;
+    padding: 50px 30px 50px 30px;
+    border-radius: 12px;
+
+}
+footer{
+	width: 100%;
+	bottom: 0;
+	background-color: #b3e6cc;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0px 20px 0px;
+}
+textarea{
+	resize: none;
+    width: 100%;
+    border: 0.2px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+footer a{      
+	text-decoration: none;
+	color: black;
+}
+.iconos a {
+	margin: 6px;
+	padding: 8px;
+	color: darkred;
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+	background-color: whitesmoke;
+	border-radius: 18%;
+	text-decoration: none;
+	border: 2px black;
+	color: black;
+}
+
+@media screen and (max-width:400px ){
+
+	.menu {
+		flex-direction: column;
+		text-align: center;
+	}
+
+
+}
+@media screen and (max-width:700px ){
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+	.menu {
+		width: 100%;
+	}
+
+	.producto{
+		width: 90%;
+    	height: 100%;
+    	align-items: center;
+    	flex-direction: column;
+	}
+	.containerProducto {
+		width: 80%
+	}	
+	.descripcion{
+		width: 100%;
+	}
+	#formulario,#registro,#EncuestaUsuario{
+    width: 90%;
+	}
+
+.art div {
+    height: 100%;
+    width: 200px;
+    background: white;
+
+
+
+}
